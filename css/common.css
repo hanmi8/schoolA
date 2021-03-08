@@ -162,9 +162,19 @@ tbody.tree td .depth-second {display:inline-block;margin-left:40px;}
 .topWrap .gnb       {text-align:center;background:#0a53be;}
 .topWrap .gnb li    {display:inline-block;width:200px;}
 .topWrap .gnb li a  {display:block;padding:15px 50px;color:#fff;font-weight:500;font-size:18px;}
-.topWrap .sitemap   {position:absolute;left:0;right:0;height:200px;background:#fff;text-align:center;padding:20px;display:block;z-index:98;}
-.topWrap .sitemap > div {display:inline-block;width:200px;vertical-align:top;text-align:left;}
-.topWrap .sitemap > div ul li {padding:5px;}
+.topWrap .sitemap   {position:absolute;left:0;right:0;display:block;box-shadow:0 10px 10px rgba(0,0,0,0.5);background:#fff;text-align:center;padding:40px 0;z-index:98;}
+.topWrap .sitemap span.sitemapClose {position:absolute;left:1230px;width:30px;height:30px;transform:rotate(0deg);transition:.3s;cursor:pointer;}
+.topWrap .sitemap span.sitemapClose:hover {transform:rotate(180deg);transition:.3s;}
+.topWrap .sitemap span.sitemapClose:before {position:absolute;top:15px;content:'';display:block;width:30px;height:1px;background:#555;transform:rotate(45deg);}
+.topWrap .sitemap span.sitemapClose:after  {position:absolute;top:15px;content:'';display:block;width:30px;height:1px;background:#555;transform:rotate(-45deg);}
+.topWrap .sitemap > div {position:relative;left:70px;display:inline-block;width:200px;vertical-align:top;text-align:left;}
+.topWrap .sitemap > div.intro {left:60px;}
+.topWrap .sitemap > div h4 {margin-bottom:10px;}
+.topWrap .sitemap > div h4:after {content:'';display:block;width:0;height:5px;background:#60970c;margin-top:10px;transition:.3s;}
+.topWrap .sitemap > div:hover h4:after {width:100%;transition:.3s;}
+.topWrap .sitemap > div ul li {padding:10px 0;}
+.topWrap .sitemap > div ul li a {color:#555;padding:3px 10px;}
+.topWrap .sitemap > div ul li a:hover {background:#80bc25;color:#fff;}
 
 .contents .visual   {position:relative;height:500px;background:url('../images/visual.png') repeat-x center -720px #000;}
 .contents .visual .searchWrap {position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);width:600px;}
