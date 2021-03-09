@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/common.css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
@@ -25,27 +26,23 @@
                 <span>International School Information</span>
             </a>
         </h1>
-        <div class="gnb">
-            <ul>
-                <li><a href="sub_intro.html">서비스소개</a></li>
-                <li><a href="#">학교찾기</a></li>
-                <li><a href="#">학교정보</a></li>
-                <li><a href="#">알림마당</a></li>
-            </ul>
-        </div>
-        <div class="sitemap">
+        <ul class="gnb">
+            <li><a href="#">서비스소개</a></li>
+            <li><a href="#">학교찾기</a></li>
+            <li><a href="#">학교정보</a></li>
+            <li><a href="#">알림마당</a></li>
+        </ul>
+        <div class="sitemap" style="display:none;">
             <span class="sitemapClose"></span>
             <div class="intro">
-                <h4>서비스소개</h4>
                 <ul>
-                    <li><a href="#">서비스개요</a></li>
+                    <li><a href="intro_service.html">서비스개요</a></li>
                     <li><a href="#">공시항목</a></li>
                     <li><a href="#">관련법령</a></li>
                     <li><a href="#">제도비교안내</a></li>
                 </ul>
             </div>
             <div class="schoolFind">
-                <h4>학교찾기</h4>
                 <ul>
                     <li><a href="#">전국학교안내</a></li>
                     <li><a href="#">서울에서찾기</a></li>
@@ -54,7 +51,6 @@
                 </ul>
             </div>
             <div class="schoolInfo">
-                <h4>학교정보</h4>
                 <ul>
                     <li><a href="#">외국인학교외국인유치원</a></li>
                     <li><a href="#">외국교육기관(유초중등)</a></li>
@@ -63,19 +59,18 @@
                 </ul>
             </div>
             <div class="notice">
-                <h4>알림마당</h4>
                 <ul>
                     <li><a href="#">공지사항</a></li>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">자료실</a></li>
                     <li><a href="#">관련사이트</a></li>
                     <li><a href="#">외국인학교/유치원설립안내</a></li>
-                    <li><a href="#">외국교육기관 설립안내</a></li>
+                    <li><a href="#">외국교육기관설립안내</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="contents">
+    <div class="container">
         <div class="visual">
             <div class="searchWrap">
                 <div class="search">
@@ -143,44 +138,46 @@
     </div>
     <div class="footer">
         <div class="sitemap">
-            <div class="clearfix contentWrap">
-                <div class="menu intro">
-                    <h4>서비스소개</h4>
-                    <ul>
-                        <li><a href="#">서비스개요</a></li>
-                        <li><a href="#">공시항목</a></li>
-                        <li><a href="#">관련법령</a></li>
-                        <li><a href="#">제도비교안내</a></li>
-                    </ul>
-                </div>
-                <div class="menu schoolFind">
-                    <h4>학교찾기</h4>
-                    <ul>
-                        <li><a href="#">전국학교안내</a></li>
-                        <li><a href="#">서울에서찾기</a></li>
-                        <li><a href="#">경기도에서찾기</a></li>
-                        <li><a href="#">전국에서찾기</a></li>
-                    </ul>
-                </div>
-                <div class="menu schoolInfo">
-                    <h4>학교정보</h4>
-                    <ul>
-                        <li><a href="#">외국인학교외국인유치원</a></li>
-                        <li><a href="#">외국교육기관(유초중등)</a></li>
-                        <li><a href="#">외국교육기관(고등)</a></li>
-                        <li><a href="#">제주국제학교</a></li>
-                    </ul>
-                </div>
-                <div class="menu notice">
-                    <h4>알림마당</h4>
-                    <ul>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">자료실</a></li>
-                        <li><a href="#">관련사이트</a></li>
-                        <li><a href="#">외국인학교/유치원설립안내</a></li>
-                        <li><a href="#">외국교육기관 설립안내</a></li>
-                    </ul>
+            <div class="contentWrap">
+                <div class="clearfix">
+                    <div class="menu intro">
+                        <h4>서비스소개</h4>
+                        <ul>
+                            <li><a href="#">서비스개요</a></li>
+                            <li><a href="#">공시항목</a></li>
+                            <li><a href="#">관련법령</a></li>
+                            <li><a href="#">제도비교안내</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu schoolFind">
+                        <h4>학교찾기</h4>
+                        <ul>
+                            <li><a href="#">전국학교안내</a></li>
+                            <li><a href="#">서울에서찾기</a></li>
+                            <li><a href="#">경기도에서찾기</a></li>
+                            <li><a href="#">전국에서찾기</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu schoolInfo">
+                        <h4>학교정보</h4>
+                        <ul>
+                            <li><a href="#">외국인학교외국인유치원</a></li>
+                            <li><a href="#">외국교육기관(유초중등)</a></li>
+                            <li><a href="#">외국교육기관(고등)</a></li>
+                            <li><a href="#">제주국제학교</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu notice">
+                        <h4>알림마당</h4>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">관련사이트</a></li>
+                            <li><a href="#">외국인학교/유치원설립안내</a></li>
+                            <li><a href="#">외국교육기관 설립안내</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="menu quick">
                     <h4>QUICK MENU</h4>
