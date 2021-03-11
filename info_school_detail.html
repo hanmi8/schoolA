@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/common.css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -40,25 +39,25 @@
             <div class="intro">
                 <ul>
                     <li><a href="intro_service.html">서비스개요</a></li>
-                    <li><a href="#">공시항목</a></li>
-                    <li><a href="#">관련법령</a></li>
-                    <li><a href="#">제도비교안내</a></li>
+                    <li><a href="intro_public.html">공시항목</a></li>
+                    <li><a href="intro_ordinance.html">관련법령</a></li>
+                    <li><a href="intro_system.html">제도비교안내</a></li>
                 </ul>
             </div>
             <div class="schoolFind">
                 <ul>
                     <li><a href="find_whole.html">전국학교안내</a></li>
-                    <li><a href="#">서울에서찾기</a></li>
-                    <li><a href="#">경기도에서찾기</a></li>
-                    <li><a href="#">전국에서찾기</a></li>
+                    <li><a href="find_seoul.html">서울에서찾기</a></li>
+                    <li><a href="find_gyeonggi.html">경기도에서찾기</a></li>
+                    <li><a href="find_nation.html">전국에서찾기</a></li>
                 </ul>
             </div>
             <div class="schoolInfo">
                 <ul>
                     <li><a href="info_school.html">외국인학교<br>외국인유치원</a></li>
-                    <li><a href="#">외국교육기관<br>(유초중등)</a></li>
-                    <li><a href="#">외국교육기관<br>(고등)</a></li>
-                    <li><a href="#">제주국제학교</a></li>
+                    <li><a href="info_middle.html">외국교육기관<br>(유초중등)</a></li>
+                    <li><a href="info_high.html">외국교육기관<br>(고등)</a></li>
+                    <li><a href="info_jeju.html">제주국제학교</a></li>
                 </ul>
             </div>
             <div class="notice">
@@ -66,9 +65,9 @@
                     <li><a href="notice_notice.html">공지사항</a></li>
                     <li><a href="notice_faq.html">FAQ</a></li>
                     <li><a href="notice_archive.html">자료실</a></li>
-                    <li><a href="#">관련사이트</a></li>
-                    <li><a href="#">외국인학교/<br>유치원설립안내</a></li>
-                    <li><a href="#">외국교육기관<br>설립안내</a></li>
+                    <li><a href="notice_site.html">관련사이트</a></li>
+                    <li><a href="notice_kindergarten.html">외국인학교/<br>유치원설립안내</a></li>
+                    <li><a href="notice_educational.html">외국교육기관<br>설립안내</a></li>
                 </ul>
             </div>
         </div>
@@ -95,7 +94,7 @@
                         <li><a href="#">외국인학교외국인유치원</a></li>
                         <li><a href="#">외국교육기관(유초중등)</a></li>
                         <li><a href="#">외국교육기관(고등)</a></li>
-                        <li><a href="#">제주국제학교</a></li>
+                        <li><a href="info_jeju.html">제주국제학교</a></li>
                     </ul>
                 </li>
             </ul>
@@ -122,56 +121,60 @@
                     </div>
                     <div class="relative">
                         <div class="schoolImage">
-                            <img src="images/school_namsan.png">
+                            <img src="images/noimage.png">
+                            <div class="tel-number">
+                                <label>담당자연락처</label>
+                                <span>02-2232-2451</span>
+                            </div>
                         </div>
                         <div class="form-vertical">
                             <div class="form-group">
-                                <label class="control-label col-4">학교명(한국어)</label>
-                                <div class="col-8 form-control-static">남산국제유치원</div>
+                                <label class="control-label col-3">학교명(한국어)</label>
+                                <div class="col-9 form-control-static">남산국제유치원</div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-4">학교명(외국어)</label>
-                                <div class="col-8 form-control-static">Namsan International Kindergarten</div>
+                                <label class="control-label col-3">학교명(외국어)</label>
+                                <div class="col-9 form-control-static">Namsan International Kindergarten</div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-4">학교유형</label>
-                                <div class="col-8 form-control-static">외국인유치원</div>
+                                <label class="control-label col-3">학교유형</label>
+                                <div class="col-9 form-control-static">외국인유치원</div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-4">학교위치</label>
-                                <div class="col-8 form-control-static">서울특별시 중구 다산로8길 8-6</div>
+                                <label class="control-label col-3">학교위치</label>
+                                <div class="col-9 form-control-static">서울특별시 중구 다산로8길 8-6</div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-4">개교일</label>
-                                <div class="col-8 form-control-static">2005-08-29</div>
+                                <label class="control-label col-3">개교일</label>
+                                <div class="col-9 form-control-static">2005-08-29</div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-4">개설과정</label>
-                                <div class="col-8 form-control-static">유치원</div>
+                                <label class="control-label col-3">개설과정</label>
+                                <div class="col-9 form-control-static">유치원</div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-4">교수언어</label>
-                                <div class="col-8 form-control-static">영어</div>
+                                <label class="control-label col-3">교수언어</label>
+                                <div class="col-9 form-control-static">영어</div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-4">수업시작일</label>
-                                <div class="col-8 form-control-static">매년 8월 둘째주</div>
+                                <label class="control-label col-3">수업시작일</label>
+                                <div class="col-9 form-control-static">매년 8월 둘째주</div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-4">홈페이지</label>
-                                <div class="col-8 form-control-static"><a href="http://www.nikseoul.org">http://www.nikseoul.org</a></div>
+                                <label class="control-label col-3">홈페이지</label>
+                                <div class="col-9 form-control-static"><a href="http://www.nikseoul.org">http://www.nikseoul.org</a></div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-4">대표전화</label>
-                                <div class="col-8 form-control-static">82-2-2232-2451</div>
+                                <label class="control-label col-3">대표전화</label>
+                                <div class="col-9 form-control-static">82-2-2232-2451</div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-4">대표이메일</label>
-                                <div class="col-8 form-control-static"><a mailto="ej.oh@nikseoul.org">ej.oh@nikseoul.org</a></div>
+                                <label class="control-label col-3">대표이메일</label>
+                                <div class="col-9 form-control-static"><a mailto="ej.oh@nikseoul.org">ej.oh@nikseoul.org</a></div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-4">학교소개</label>
-                                <div class="col-8 form-control-static">NIK는 만 2세부터 5세까지의 외국인 자녀를 대상으로 하는 유치원입니다.
+                                <label class="control-label col-3">학교소개</label>
+                                <div class="col-9 form-control-static">NIK는 만 2세부터 5세까지의 외국인 자녀를 대상으로 하는 유치원입니다.
                                     IB PYP Candidate School로써 세계 여러 나라의 국제 학교에서의 경험이 있는 외국인 교사가 각 반을 담임하고 있으며
                                     학생당 교사의 비율이 4:1-6:1 입니다. 실외 놀이터와 실외 수영장, 실내 체육관을 겸비하여 놀이 속에서 아이들의 잠재력을
                                     최대한 계발할 수 있는 충분한 놀이 공간을 제공하고 있습니다.<br><br>
@@ -187,14 +190,10 @@
                     <h4>주요지표</h4>
                     <div class="row">
                         <div class="col-6">
-                            <div style="width:100%;">
-                                <canvas id="gender" height="300"></canvas>
-                            </div>
+                            <div class="chart"><span>CHART</span></div>
                         </div>
                         <div class="col-6">
-                            <div style="width:100%;">
-                                <canvas id="pay" height="300"></canvas>
-                            </div>
+                            <div class="chart"><span>CHART</span></div>
                         </div>
                     </div>
                 </div>
@@ -204,39 +203,39 @@
                     <li class="col-6">
                         <h4>원아 및 교직원현황</h4>
                         <ul class="depth-second">
-                            <li>연령별 학급수·원아수</li>
-                            <li>직위별 교원 현황</li>
-                            <li>자격별 교원 현황</li>
-                            <li>교사의 현 기관 근속연수</li>
+                            <li><a href="#" class="modalCall" name="modalCase01">연령별 학급수·원아수</a></li>
+                            <li><a href="#" class="modalCall" name="modalCase02">직위별 교원 현황</a></li>
+                            <li><a href="#" class="modalCall" name="modalCase03">자격별 교원 현황</a></li>
+                            <li><a href="#">교사의 현 기관 근속연수</a></li>
                         </ul>
                     </li>
                     <li class="col-6">
                         <h4>교육활동</h4>
                         <ul class="depth-second">
-                            <li>유치원 규칙</li>
-                            <li>교육과정 편성·운영</li>
-                            <li>수업일수 및 수업시수 현황</li>
-                            <li>방과후 과정 편성·운영 계획</li>
+                            <li><a href="#">유치원 규칙</a></li>
+                            <li><a href="#">교육과정 편성·운영</a></li>
+                            <li><a href="#">수업일수 및 수업시수 현황</a></li>
+                            <li><a href="#">방과후 과정 편성·운영 계획</a></li>
                         </ul>
                     </li>
                     <li class="col-6">
                         <h4>예결산 및 교육여건</h4>
                         <ul class="depth-second">
-                            <li>유치원 원비 현황</li>
-                            <li>유치원 교지·교사 현황</li>
-                            <li>유치원 회계 예·결산서</li>
-                            <li>통학차량 운영 현황</li>
-                            <li>위반 내용 및 조치 결과</li>
+                            <li><a href="#">유치원 원비 현황</a></li>
+                            <li><a href="#">유치원 교지·교사 현황</a></li>
+                            <li><a href="#">유치원 회계 예·결산서</a></li>
+                            <li><a href="#">통학차량 운영 현황</a></li>
+                            <li><a href="#">위반 내용 및 조치 결과</a></li>
                         </ul>
                     </li>
                     <li class="col-6">
                         <h4>급식 보건 위생관리</h4>
                         <ul class="depth-second">
-                            <li>급식실시 현황</li>
-                            <li>급식 식단표</li>
-                            <li>환경위생관리 현황</li>
-                            <li>안전점검 및 안전교육 현황</li>
-                            <li>공제회 및 보험가입 현황</li>
+                            <li><a href="#">급식실시 현황</a></li>
+                            <li><a href="#">급식 식단표</a></li>
+                            <li><a href="#">환경위생관리 현황</a></li>
+                            <li><a href="#">안전점검 및 안전교육 현황</a></li>
+                            <li><a href="#">공제회 및 보험가입 현황</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -278,18 +277,18 @@
                         <h4>서비스소개</h4>
                         <ul>
                             <li><a href="#">서비스개요</a></li>
-                            <li><a href="#">공시항목</a></li>
-                            <li><a href="#">관련법령</a></li>
-                            <li><a href="#">제도비교안내</a></li>
+                            <li><a href="intro_public.html">공시항목</a></li>
+                            <li><a href="intro_ordinance.html">관련법령</a></li>
+                            <li><a href="intro_system.html">제도비교안내</a></li>
                         </ul>
                     </div>
                     <div class="menu schoolFind">
                         <h4>학교찾기</h4>
                         <ul>
                             <li><a href="find_whole.html">전국학교안내</a></li>
-                            <li><a href="#">서울에서찾기</a></li>
-                            <li><a href="#">경기도에서찾기</a></li>
-                            <li><a href="#">전국에서찾기</a></li>
+                            <li><a href="find_seoul.html">서울에서찾기</a></li>
+                            <li><a href="find_gyeonggi.html">경기도에서찾기</a></li>
+                            <li><a href="find_nation.html">전국에서찾기</a></li>
                         </ul>
                     </div>
                     <div class="menu schoolInfo">
@@ -298,7 +297,7 @@
                             <li><a href="#">외국인학교외국인유치원</a></li>
                             <li><a href="#">외국교육기관(유초중등)</a></li>
                             <li><a href="#">외국교육기관(고등)</a></li>
-                            <li><a href="#">제주국제학교</a></li>
+                            <li><a href="info_jeju.html">제주국제학교</a></li>
                         </ul>
                     </div>
                     <div class="menu notice">
@@ -307,8 +306,8 @@
                             <li><a href="notice_notice.html">공지사항</a></li>
                             <li><a href="notice_faq.html">FAQ</a></li>
                             <li><a href="notice_archive.html">자료실</a></li>
-                            <li><a href="#">관련사이트</a></li>
-                            <li><a href="#">외국인학교/유치원설립안내</a></li>
+                            <li><a href="notice_site.html">관련사이트</a></li>
+                            <li><a href="notice_kindergarten.html">외국인학교/유치원설립안내</a></li>
                             <li><a href="#">외국교육기관 설립안내</a></li>
                         </ul>
                     </div>
@@ -334,91 +333,183 @@
     </div>
 </div>
 
-<script>
-    new Chart(document.getElementById("gender"), {
-        type: 'bar',
-        data: {
-            labels: ["만3세이하","만4세","만5세","혼합인원학급","특수학급"],
-            datasets: [{
-                label: '남자',
-                backgroundColor: "#55b9fd",
-                data: [11, 8, 4, 0, 0],
-            },{
-                label: '여자',
-                backgroundColor: "#ff9999",
-                data: [10, 4, 4, 0, 0],
-            }],
-        },
-        options: {
-            responsive: true,
-            title: {
-                display: true,
-                text: '학생현황'
-            },
-            hover: {
-                mode: 'nearest',
-                intersect: true
-            },
-            scales: {
-                xAxes: [{
-                    display: true,
-                    stacked: true,
-                }],
-                yAxes: [{
-                    display: true,
-                    stacked: true,
-                }]
-            }
-        }
-    });
-    new Chart(document.getElementById("pay"), {
-        type: 'bar',
-        data: {
-            labels: ["만3세","만4세","만5세"],
-            datasets: [{
-                label: '입학금',
-                backgroundColor: "#caf270",
-                data: [5500000, 5500000, 5500000],
-            },{
-                label: '수업료',
-                backgroundColor: "#45c490",
-                data: [9750000, 12750000, 1275000],
-            },{
-                label: '스쿨버스비',
-                backgroundColor: "#008d93",
-                data: [1650000, 1650000, 1650000],
-            },{
-                label: '방과후과정비',
-                backgroundColor: "#274e63",
-                data: [0, 0, 0],
-            },{
-                label: '기타비용',
-                backgroundColor: "#173e4e",
-                data: [0, 0, 0],
-            }],
-        },
-        options: {
-            responsive: true,
-            title: {
-                display: true,
-                text: '학생현황'
-            },
-            hover: {
-                mode: 'nearest',
-                intersect: true
-            },
-            scales: {
-                xAxes: [{
-                    display: true,
-                    stacked: true,
-                }],
-                yAxes: [{
-                    display: true,
-                    stacked: true,
-                }]
-            }
-        }
-    });
-</script>
+<div class="modal" id="modalCase01">
+    <div class="modal-dialog modal-large">
+        <div class="modal-header">
+            <h3>공시정보</h3>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <h4>연령별 학급수.원아수<span>(자료기준일 : 2019.09.01)</span></h4>
+            <div class="section">
+                <div class="chart"><span>CHART AREA</span></div>
+            </div>
+            <div class="section">
+                <div class="unit">(단위 : 개, 명)</div>
+                <table class="table-vertical" summary="연령별 학급수 ㆍ원아수">
+                    <caption>연령별 학급수 ㆍ원아수</caption>
+                    <colgroup>
+                        <col width="100">
+                        <col width="70">
+                        <col width="70">
+                        <col width="60">
+                        <col width="60">
+                        <col width="60">
+                        <col width="60">
+                        <col width="60">
+                        <col width="60">
+                        <col width="*">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th colspan="7" rowspan="1" class="last">구분 (2019~2020학년도)</th>
+                    </tr>
+                    <tr>
+                        <th colspan="1" rowspan="3">과정</th>
+                        <th colspan="1" rowspan="3">학급수</th>
+                        <th colspan="1" rowspan="3">정원(인가 기준)</th>
+                        <th colspan="3" rowspan="1">원아수</th>
+                        <th colspan="1" rowspan="3" class="last">학급당 원아수</th>
+
+                    </tr><tr>
+                        <th colspan="2" rowspan="1">성별</th>
+                        <th colspan="1" rowspan="2">계</th>
+                    </tr>
+                    <tr>
+                        <th colspan="1" rowspan="1">남학생</th>
+                        <th colspan="1" rowspan="1">여학생</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>
+                            만3세이하
+                            <input type="hidden" size="6" id="SIGUBUNCD1" name="SIGUBUNCD" value="STD_16">
+                        </th>
+                        <td class="tc">2</td>
+                        <td class="tc">40</td>
+                        <td class="tc">11</td>
+                        <td class="tc">10</td>
+                        <td class="tc">21</td>
+                        <td class="tc">
+                            10.5
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            만4세
+                            <input type="hidden" size="6" id="SIGUBUNCD2" name="SIGUBUNCD" value="STD_17">
+                        </th>
+                        <td class="tc">1</td>
+                        <td class="tc">20</td>
+                        <td class="tc">8</td>
+                        <td class="tc">4</td>
+                        <td class="tc">12</td>
+                        <td class="tc">
+                            12
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            만5세
+                            <input type="hidden" size="6" id="SIGUBUNCD3" name="SIGUBUNCD" value="STD_18">
+                        </th>
+                        <td class="tc">1</td>
+                        <td class="tc">20</td>
+                        <td class="tc">4</td>
+                        <td class="tc">4</td>
+                        <td class="tc">8</td>
+                        <td class="tc">
+                            8
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            혼합인원학급
+                            <input type="hidden" size="6" id="SIGUBUNCD4" name="SIGUBUNCD" value="STD_19">
+                        </th>
+                        <td class="tc">0</td>
+                        <td class="tc">0</td>
+                        <td class="tc">0</td>
+                        <td class="tc">0</td>
+                        <td class="tc">0</td>
+                        <td class="tc">
+                            0
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            특수학급
+                            <input type="hidden" size="6" id="SIGUBUNCD5" name="SIGUBUNCD" value="STD_20">
+                        </th>
+                        <td class="tc">0</td>
+                        <td class="tc">0</td>
+                        <td class="tc">0</td>
+                        <td class="tc">0</td>
+                        <td class="tc">0</td>
+                        <td class="tc">
+                            0
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="sum">합 계</th>
+                        <td class="tc sum">4</td>
+                        <td class="tc sum">80</td>
+                        <td class="tc sum">23</td>
+                        <td class="tc sum">18</td>
+                        <td class="tc sum">41</td>
+                        <td class="tc sum">
+                            10.25
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+<!--        <div class="modal-footer">-->
+<!--            <button class="btn btn-primary">저장</button>-->
+<!--            <button class="btn btn-default">닫기</button>-->
+<!--        </div>-->
+    </div>
+</div>
+
+<div class="modal" id="modalCase02">
+    <div class="modal-dialog modal-large">
+        <div class="modal-header">
+            <h3>공시정보</h3>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <h4>유치원 회계 결산서 결산기준 : 2018-2019학년도<span>(원별 회계 마감 기준)</span></h4>
+            <div class="section">
+                <table class="table-horizontal" summary="" style="table-layout:fixed;word-wrap:break-word;word-break:break-all">
+                    <colgroup>
+                        <col width="50">
+                        <col width="250">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th>내  용</th>
+                        <td>
+                            첨부합니다.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for=""><span class=""></span>첨부파일</label></th>
+                        <td id="fileTd">
+                            <ul class="attachFile">
+                                <li><a href="#">2018-19 NIK 결산서</a></li>
+                                <li><a href="#">2019-01 NIK 결산서</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

@@ -34,7 +34,7 @@ $(function(){
         $(this).parent('li').addClass('on');
         $('.tab-contents').removeClass('on');
         var tabID = $(this).attr('href');
-        console.log(tabID);
+        // console.log(tabID);
         $(tabID).addClass('on');
     });
 
@@ -53,7 +53,7 @@ $(function(){
     // });
 
     $('.dropdown').children('strong').click(function(){
-        $('.dropdown-menu').slideUp(200);
+        $(this).parent('.dropdown').siblings('.dropdown').children('.dropdown-menu').slideUp(200);
         $(this).parent().children('.dropdown-menu').slideToggle(200);
     });
     $(document).on('click', function(e){
@@ -67,4 +67,45 @@ $(function(){
         $(this).find('i.angle').toggleClass('fa-angle-down fa-angle-up');
         $(this).children('.answer').slideToggle(200);
     })
+
+    $('body').append('<div class="toTop"><i class="fas fa-chevron-up"></i><span>TOP</span></div>');
+    $('.toTop').click(function(){
+        $('html, body').animate({scrollTop:0},400);
+        return false;
+    });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $('.toTop').fadeIn();
+        } else {
+            $('.toTop').fadeOut();
+        }
+    });
+
+    $('.modalCall').click(function(){
+        var modalID = $(this).attr('name');
+        $('body').css('overflow', 'hidden');
+        $('#' + modalID).show();
+        // if($(window).height() < 768) {
+        // }
+        $('#' + modalID + ' .modal-body').css('max-height',
+            $(window).height()
+            - $('#' + modalID + ' .modal-header').outerHeight()
+            // - $('#' + modalID + ' .modal-footer').outerHeight()
+            - 200);
+        console.log($('#' + modalID + ' .modal-body').height())
+    })
+    $('.modal-close').click(function(){
+        $('body').css('overflow', '');
+        $(this).parents('.modal').hide();
+    })
+
+    $('.mapList').find('a').mouseenter(function(){
+        var badgeId = $(this).attr('name');
+        console.log(badgeId)
+        $(badgeId).css('background', '#000');
+    })
+    $('.mapList').find('a').mouseleave(function(){
+        $('.elementPosition').children('li').css('background', '')
+    })
+
 })

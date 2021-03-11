@@ -10,6 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="706de541-60c6-4689-9337-69568709814a" name="Default Changelist" comment="서브페이지 디자인 1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     <list default="true" id="706de541-60c6-4689-9337-69568709814a" name="Default Changelist" comment="첫업로드">
       <change afterPath="$PROJECT_DIR$/images/img_map.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/images/img_mapgg.gif" afterDir="false" />
@@ -57,7 +59,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -65,8 +66,6 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\WebstormProjects\schoolA" />
-      <recent name="C:\Users\User\WebstormProjects\schoolA\images" />
       <recent name="C:\Users\hanmi\WebstormProjects\schoolA" />
     </key>
   </component>
@@ -84,8 +83,6 @@
       <workItem from="1615213209819" duration="2233000" />
       <workItem from="1615269478491" duration="1488000" />
       <workItem from="1615280010054" duration="11479000" />
-      <workItem from="1615307271627" duration="135000" />
-      <workItem from="1615334957349" duration="5933000" />
     </task>
     <task id="LOCAL-00001" summary="첫업로드">
       <created>1614847174837</created>
@@ -115,5 +112,42 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="첫업로드" />
     <option name="LAST_COMMIT_MESSAGE" value="첫업로드" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2628" y="343" key="#Notifications" timestamp="1615279863769">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2628" y="343" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615279863769" />
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1615280420669">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615280420669" />
+    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1615301659743">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1615276994147" />
+    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615301659743" />
+    <state x="184" y="86" key="MergeDialog" timestamp="1615213282396">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615213282396" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1614847176489">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614847176489" />
+    <state x="2695" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615279745070">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2695" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615279745070" />
+    <state x="775" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615213215880" />
+    <state x="2588" y="223" width="584" height="594" key="find.popup" timestamp="1615299052534">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2588" y="223" width="584" height="594" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615299052534" />
+    <state x="668" y="223" width="584" height="594" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615215085046" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1615298589735">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615298589735" />
   </component>
 </project>
