@@ -74,11 +74,27 @@ $(function(){
         return false;
     });
     $(window).scroll(function () {
+        console.log('scrollTop : ' + $(window).scrollTop())
         if ($(this).scrollTop() > 50) {
             $('.toTop').fadeIn();
         } else {
             $('.toTop').fadeOut();
         }
+        if($(this).scrollTop() > 333){
+            $('.indicator').children('a').css('color', '#000');
+        }else{
+            $('.indicator').children('a').css('color', '');
+        }
+
+        $('.mapFindWrap').find('li').each( function(i){
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if( bottom_of_window > bottom_of_element ){
+                $(this).delay(i*500).animate({'top':'0','opacity':'1'}, 300)
+            }
+
+        });
     });
 
     $('.modalCall').click(function(){
@@ -92,7 +108,6 @@ $(function(){
             - $('#' + modalID + ' .modal-header').outerHeight()
             // - $('#' + modalID + ' .modal-footer').outerHeight()
             - 200);
-        console.log($('#' + modalID + ' .modal-body').height())
     })
     $('.modal-close').click(function(){
         $('body').css('overflow', '');
@@ -101,11 +116,24 @@ $(function(){
 
     $('.mapList').find('a').mouseenter(function(){
         var badgeId = $(this).attr('name');
-        console.log(badgeId)
         $(badgeId).css('background', '#000');
     })
     $('.mapList').find('a').mouseleave(function(){
         $('.elementPosition').children('li').css('background', '')
+    })
+
+    $('.indicator').children('a').click(function(){
+        if($(this).attr('href') === '#search'){
+            $('html, body').animate({scrollTop:0},400);
+        }else if($(this).attr('href') === '#board'){
+            $('html, body').animate({scrollTop:720},400);
+        }else if($(this).attr('href') === '#map'){
+            $('html, body').animate({scrollTop:1670},400);
+        }else if($(this).attr('href') === '#bell'){
+            $('html, body').animate({scrollTop:2596},400);
+        }else if($(this).attr('href') === '#sitemap'){
+            $('html, body').animate({scrollTop:3458},400);
+        }
     })
 
 })

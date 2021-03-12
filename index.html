@@ -16,8 +16,8 @@
 <div class="wrapper">
     <div class="topWrap">
         <div class="util">
-            <a href="#"><i class="fa fa-search"></i> 통합검색</a>
-            <a href="#">로그인</a>
+            <a href="totalSearch.html"><i class="fa fa-search"></i> 통합검색</a>
+            <a href="#" class="modalCall" name="login">로그인</a>
             <a href="#">English</a>
         </div>
         <h1 class="branding">
@@ -52,10 +52,10 @@
             </div>
             <div class="schoolInfo">
                 <ul>
-                    <li><a href="#">외국인학교외국인유치원</a></li>
+                    <li><a href="info_school.html">외국인학교외국인유치원</a></li>
                     <li><a href="#">외국교육기관(유초중등)</a></li>
                     <li><a href="#">외국교육기관(고등)</a></li>
-                    <li><a href="info_jeju.html">제주국제학교</a></li>
+                    <li><a href="#">제주국제학교</a></li>
                 </ul>
             </div>
             <div class="notice">
@@ -71,8 +71,16 @@
         </div>
     </div>
     <div class="container">
+        <div class="indicator">
+            <a href="#search"><i class="fa fa-search"></i><span>통합검색</span></a>
+            <a href="#board"><i class="fa fa-list"></i><span>공지사항</span></a>
+            <a href="#map"><i class="fa fa-map"></i><span>지도로찾기</span></a>
+            <a href="#bell"><i class="fa fa-bell"></i><span>알리미사이트</span></a>
+            <a href="#sitemap"><i class="fa fa-sitemap"></i><span>사이트맵</span></a>
+        </div>
         <div class="visual">
             <div class="searchWrap">
+                <div class="description">국내에 있는 외국학교의 정보를 찾아볼 수 있습니다.</div>
                 <div class="search">
                     <select>
                         <option>통합검색</option>
@@ -83,18 +91,29 @@
                     <input type="text">
                     <button>검색</button>
                 </div>
-                <div class="description">국내에 있는 외국학교의 정보를 찾아볼 수 있습니다.</div>
             </div>
         </div>
         <div class="schoolGroupWrap">
             <ul>
-                <li><a href="#"><label>외국인학교<br>외국인유치원</label></a></li>
-                <li><a href="#"><label><span>외국교육기관</span><strong>(유초중등)</strong></label></a></li>
-                <li><a href="#"><label><span>외국교육기관</span><strong>(고등)</strong></label></a></li>
-                <li><a href="#"><label><strong>제주국제학교</strong></label></a></li>
+                <li>
+                    <a href="#" class="first"><label>외국인학교<br>외국인유치원</label></a>
+                    <a href="#" class="hover"><label>외국인학교<br>외국인유치원</label></a>
+                </li>
+                <li>
+                    <a href="#" class="first"><label><span>외국교육기관</span><strong>(유초중등)</strong></label></a>
+                    <a href="#" class="hover"><label><span>외국교육기관</span><strong>(유초중등)</strong></label></a>
+                </li>
+                <li>
+                    <a href="#" class="first"><label><span>외국교육기관</span><strong>(고등)</strong></label></a>
+                    <a href="#" class="hover"><label><span>외국교육기관</span><strong>(고등)</strong></label></a>
+                </li>
+                <li>
+                    <a href="#" class="first"><label><strong>제주국제학교</strong></label></a>
+                    <a href="#" class="hover"><label><strong>제주국제학교</strong></label></a>
+                </li>
             </ul>
         </div>
-        <div class="mainNotice clearfix">
+        <div class="mainNotice clearfix" id="board">
             <div class="contentWrap row">
                 <div class="col-6">
                     <h3>공지사항 <a href="notice_notice.html"><i class="fa fa-plus"></i></a></h3>
@@ -182,15 +201,15 @@
                 </div>
             </div>
         </div>
-        <div class="mapFindWrap">
+        <div class="mapFindWrap" id="map">
             <h3>지도로 찾기</h3>
             <ul>
-                <li><a href="#"><label><strong>서울</strong>에서 찾기</label></a></li>
-                <li><a href="#"><label><strong>경기도</strong>에서 찾기</label></a></li>
-                <li><a href="#"><label><strong>전국</strong>에서 찾기</label></a></li>
+                <li><a href="find_seoul.html"><label><strong>서울</strong>에서 찾기</label></a></li>
+                <li><a href="find_gyeonggi.html"><label><strong>경기도</strong>에서 찾기</label></a></li>
+                <li><a href="find_nation.html"><label><strong>전국</strong>에서 찾기</label></a></li>
             </ul>
         </div>
-        <div class="public">
+        <div class="public" id="bell">
             <h3>알리미 사이트</h3>
             <ul>
                 <li>
@@ -224,14 +243,14 @@
             </ul>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer" id="sitemap">
         <div class="sitemap">
             <div class="contentWrap">
                 <div class="clearfix">
                     <div class="menu intro">
                         <h4>서비스소개</h4>
                         <ul>
-                            <li><a href="#">서비스개요</a></li>
+                            <li><a href="intro_service.html">서비스개요</a></li>
                             <li><a href="intro_public.html">공시항목</a></li>
                             <li><a href="intro_ordinance.html">관련법령</a></li>
                             <li><a href="intro_system.html">제도비교안내</a></li>
@@ -249,10 +268,10 @@
                     <div class="menu schoolInfo">
                         <h4>학교정보</h4>
                         <ul>
-                            <li><a href="#">외국인학교외국인유치원</a></li>
+                            <li><a href="info_school.html">외국인학교외국인유치원</a></li>
                             <li><a href="#">외국교육기관(유초중등)</a></li>
                             <li><a href="#">외국교육기관(고등)</a></li>
-                            <li><a href="info_jeju.html">제주국제학교</a></li>
+                            <li><a href="#">제주국제학교</a></li>
                         </ul>
                     </div>
                     <div class="menu notice">
@@ -263,7 +282,7 @@
                             <li><a href="notice_archive.html">자료실</a></li>
                             <li><a href="notice_site.html">관련사이트</a></li>
                             <li><a href="notice_kindergarten.html">외국인학교/유치원설립안내</a></li>
-                            <li><a href="#">외국교육기관 설립안내</a></li>
+                            <li><a href="notice_educational.html">외국교육기관 설립안내</a></li>
                         </ul>
                     </div>
                 </div>
@@ -274,7 +293,7 @@
                         <li><a href="#">유치원알리미</a></li>
                         <li><a href="#">대학알리미</a></li>
                         <li><a href="#">귀국학생 종합안내</a></li>
-                        <li><a href="#">정보오류 신고센터</a></li>
+                        <li><a href="errorReport.html">정보오류 신고센터</a></li>
                         <li><a href="#">학교별 홈페이지 바로가기</a></li>
                     </ul>
                 </div>
@@ -287,5 +306,29 @@
         </div>
     </div>
 </div>
+
+<!-- 로그인 -->
+<div class="modal" id="login">
+    <div class="modal-dialog modal-small">
+        <div class="modal-header">
+            <h3>로그인</h3>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <div class="loginWrap">
+                <div class="inputWrap id">
+                    <label>아이디</label>
+                    <input type="text" placeholder="아이디를 입력하세요">
+                </div>
+                <div class="inputWrap password">
+                    <label>비밀번호</label>
+                    <input type="password" placeholder="비밀번호를 입력하세요">
+                </div>
+                <button class="btn btn-primary">로그인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
