@@ -276,6 +276,7 @@ a:hover {text-decoration: underline;}
 .topWrap .gnb li:after    {content:'';width:0;transition:width .3s;}
 .topWrap .gnb li.on:after,
 .topWrap .gnb li:hover:after {content:'';position:absolute;left:50%;margin-left:-50px;bottom:10px;display:block;width:100px;height:3px;background:#fff;transition:width .3s;}
+.topWrap .gnbCall {display:none;}
 
 .topWrap .gnb li a  {display:block;padding:20px 50px;color:#fff;font-weight:500;font-size:18px;}
 .topWrap .gnb li a:hover {text-decoration:none; }
@@ -285,6 +286,7 @@ a:hover {text-decoration: underline;}
 .topWrap .sitemap span.sitemapClose:hover  {transform:rotate(180deg);transition:.3s;}
 .topWrap .sitemap span.sitemapClose:before {position:absolute;top:15px;content:'';display:block;width:30px;height:1px;background:#555;transform:rotate(45deg);}
 .topWrap .sitemap span.sitemapClose:after  {position:absolute;top:15px;content:'';display:block;width:30px;height:1px;background:#555;transform:rotate(-45deg);}
+.topWrap .sitemap h4 {display:none;}
 .topWrap .sitemap > div {position:relative;left:80px;display:inline-block;width:250px;vertical-align:top;text-align:left;}
 .topWrap .sitemap > div.intro {left:70px;}
 .topWrap .sitemap > div h4 {margin-bottom:10px;}
@@ -646,3 +648,73 @@ a:hover {text-decoration: underline;}
 .container .inputWrap .input input {display:block;width:100%;background:#fff;border:1px solid #ccc;font-size:20px;padding:10px;border-radius:5px;}
 .container .inputWrap .input input::placeholder {font-size:16px;color:#aaa;}
 .container .inputWrap button {display:block;width:100%;margin-top:10px;}
+
+@media (max-width:720px) {
+
+    /*.row {display:flex;margin-left:-10px;margin-right:-10px;}*/
+    /*.row:after {content:'';display:block;height:0;clear:both;}*/
+    /*.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12 {float:left;padding-left:10px;padding-right:10px;}*/
+    /*.col-1 {width: 8.3333333333%;}*/
+    /*.col-2 {width: 16.6666666667%;}*/
+    /*.col-3 {width: 25%;}*/
+    /*.col-4 {width: 33.3333333333%;}*/
+    /*.col-5 {width: 41.6666666667%;}*/
+    /*.col-6 {width: 50%;}*/
+    /*.col-7 {width: 58.3333333333%;}*/
+    /*.col-8 {width: 66.6666666667%;}*/
+    /*.col-9 {width: 75%;}*/
+    /*.col-10 {width: 83.3333333333%;}*/
+    /*.col-11 {width: 91.6666666667%;}*/
+    /*.col-12 {width: 100%;}*/
+
+    .col-6 {}
+    .row {padding:0;display:block;}
+    .contentWrap {width:100%;}
+    .topWrap .util {display:none;width:100%;padding:0 20px;}
+    .topWrap .branding {margin:20px 0 10px;}
+    .topWrap .branding strong {font-size:22px;}
+    .topWrap .branding span {font-size:14px;}
+    .topWrap .gnb {display:none;}
+    .topWrap .gnbCall {position:absolute;right:20px;top:30px;display:inline-block;padding:10px;border:1px solid #ccc;border-radius:5px;}
+    .topWrap .sitemap  {position:fixed;top:110px;display:none;padding:40px 0;background:#0a53be;overflow:auto;}
+    .topWrap .sitemap h4 {display:block;color:#fff;text-align:right;margin-bottom:0;line-height:1;}
+    .topWrap .sitemap ul {display:block;text-align:right;}
+    .topWrap .sitemap > div {position:static;width:100%;padding:0 20px;margin-bottom:20px;border-bottom:1px dashed rgba(255,255,255,0.4);}
+    .topWrap .sitemap > div:last-child {border-bottom:none;}
+    .topWrap .sitemap > div ul li a {color:rgba(255,255,255,0.7);padding:10px 0;}
+    /*.topWrap .sitemap > div.intro {left:0;}*/
+
+
+
+
+
+    .container .indicator {display:none;}
+    .container .visual:not(.sub) {height:300px;}
+    .container .visual .searchWrap {width:100%;padding:0 20px;}
+    .searchWrap select {width:120px}
+    .searchWrap button {width:60px;}
+    .searchWrap input[type=text] {width:calc(100% - 200px);}
+    .container .schoolGroupWrap {position:static;}
+    .container .schoolGroupWrap ul {width:100%;}
+    .container .schoolGroupWrap ul li {width:50%;}
+    .container .schoolGroupWrap ul li:nth-child(1) a {background-size:80px;}
+    .container .schoolGroupWrap ul li:nth-child(2) a {background-size:80px;}
+    .container .schoolGroupWrap ul li:nth-child(3) a {background-size:80px;}
+    .container .schoolGroupWrap ul li:nth-child(4) a {background-size:120px;}
+    .container .mainNotice {padding:100px 20px;}
+    .container .mainNotice .col-6 {float:none;width:100%;padding-left:0;padding-right:0;margin-bottom:50px;}
+    .container .mainNotice ul.noticeList li a {width:100%;}
+    .container .mapFindWrap {padding:100px 0;}
+    .container .mapFindWrap ul li {float:none;width:400px;margin-bottom:50px;}
+    .container .public {padding:100px 0;}
+    .container .public ul {width:100%;}
+    .container .public ul li {float:none;width:100%;}
+    .footer .sitemap {padding:100px 20px;}
+    .footer .sitemap .menu {width:50%;margin-bottom:50px;}
+    .footer .sitemap .quick {margin-top:0;}
+    .footer .sitemap .quick ul li {display:block;}
+    .footer .copyright strong.firstMI {display:block;margin:0 auto;}
+    .footer .copyright label {display:block;margin:20px 0;}
+    .footer .copyright strong.secondMI {display:block;margin:0 auto;}
+    .toTop {left:auto;right:10px;}
+}
