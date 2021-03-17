@@ -321,7 +321,7 @@ ul, li {vertical-align:middle;}
 .container .indicator a:nth-child(5):hover span {width:52px;}
 .container .indicator a:hover {text-decoration:none;opacity:1;}
 
-.container .visual   {position:relative;background:url('../images/cover2.png') no-repeat center /100% #000;}
+.container .visual   {position:relative;background:url('../images/cover2.png') no-repeat center -150px /100% #000;}
 .container .visual:not(.sub)   {height:620px;}
 .container .visual .searchWrap {position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);width:600px;}
 .searchWrap select  {float:left;display:block;width:120px;height:50px;border:none;font-family: 'Noto Sans Korean', Helvetica, Arial, sans-serif;font-weight:300;padding:10px 20px;color:#555;}
@@ -343,16 +343,16 @@ ul, li {vertical-align:middle;}
 .container .schoolGroupWrap ul li a.first {display:block;padding-top:150px;line-height:1.4;z-index:1}
 .container .schoolGroupWrap ul li a.hover {display:block;padding-top:150px;line-height:1.4;z-index:2}
 .container .schoolGroupWrap ul li:nth-child(1) a {background:url('../images/kid_1.svg') no-repeat center 60px /70px;}
-.container .schoolGroupWrap ul li:nth-child(2) a {background:url('../images/kid_2.svg') no-repeat center 50px /30%;}
-.container .schoolGroupWrap ul li:nth-child(3) a {background:url('../images/kid_3.svg') no-repeat center 50px /30%;}
-.container .schoolGroupWrap ul li:nth-child(4) a {background:url('../images/jeju.svg') no-repeat center 70px /50%;}
+.container .schoolGroupWrap ul li:nth-child(2) a {background:url('../images/kid_2.svg') no-repeat center 50px /80px;}
+.container .schoolGroupWrap ul li:nth-child(3) a {background:url('../images/kid_3.svg') no-repeat center 50px /78px;}
+.container .schoolGroupWrap ul li:nth-child(4) a {background:url('../images/jeju.svg') no-repeat center 70px /110px;}
 
 .container .schoolGroupWrap ul li a.hover {position:absolute;top:240px;content:'';display:block;width:100%;height:240px;background:#fff;transition:top .4s;}
 .container .schoolGroupWrap ul li:hover a.hover {top:0;transition:top .4s;}
-.container .schoolGroupWrap ul li:nth-child(1):hover a.hover {background:url('../images/kid_1_on.svg') no-repeat center 65px /30% #fff;}
-.container .schoolGroupWrap ul li:nth-child(2):hover a.hover {background:url('../images/kid_2_on.svg') no-repeat center 65px /30% #fff;}
-.container .schoolGroupWrap ul li:nth-child(3):hover a.hover {background:url('../images/kid_3_on.svg') no-repeat center 65px /30% #fff;}
-.container .schoolGroupWrap ul li:nth-child(4):hover a.hover {background:url('../images/jeju_on.svg') no-repeat center 65px /50% #fff;}
+.container .schoolGroupWrap ul li:nth-child(1):hover a.hover {background:url('../images/kid_1_on.svg') no-repeat center 65px /70px #fff;}
+.container .schoolGroupWrap ul li:nth-child(2):hover a.hover {background:url('../images/kid_2_on.svg') no-repeat center 65px /80px #fff;}
+.container .schoolGroupWrap ul li:nth-child(3):hover a.hover {background:url('../images/kid_3_on.svg') no-repeat center 65px /78px #fff;}
+.container .schoolGroupWrap ul li:nth-child(4):hover a.hover {background:url('../images/jeju_on.svg') no-repeat center 65px /110px #fff;}
 .container .schoolGroupWrap ul li a.hover label {color:#0a53be;}
 .container .schoolGroupWrap ul li a.hover:hover {text-decoration:none;}
 
@@ -370,8 +370,11 @@ ul, li {vertical-align:middle;}
 .container .mainNotice ul.noticeList li a,
 .container .mainNotice ul.noticeList li span {display:block;padding:20px 0;font-size:1.375rem;font-weight:300;color:#555;width:480px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .container .mainNotice ul.noticeList li a:hover {color:#0a53be;text-decoration:underline;}
-.container .mainNotice ul.directSchool li select {display:block;width:100%;background:none;border:none;height:63px;border-bottom:1px solid #aaa;padding:18px 0;font-size:1.375rem;font-weight:300;color:#555;}
+.container .mainNotice ul.directSchool li select {display:block;width:100%;background:none;border:none;border-bottom:1px solid #aaa;padding:18px 0;font-size:1.375rem;font-weight:300;color:#555;}
 .container .mainNotice ul.directSchool li select:focus {outline:none;}
+.container .mainNotice ul.noticeList li a,
+.container .mainNotice ul.noticeList li span,
+.container .mainNotice ul.directSchool li select {height:63px;}
 
 
 .container .mapFindWrap          {text-align:center;padding:200px 0;}
@@ -664,7 +667,8 @@ ul, li {vertical-align:middle;}
 .container .inputWrap .input input::placeholder {font-size:1rem;color:#aaa;}
 .container .inputWrap button {display:block;width:100%;margin-top:10px;}
 
-.container .schoolInfoSummary {display:none;background:#f4f4f4;border-radius:5px;padding:10px;margin-top:20px;box-shadow:0 0 10px rgba(0,0,0,0.2);border:1px solid #ccc;}
+.container .schoolInfoSummary {position:absolute;display:none;width:300px;background:#f4f4f4;border-radius:5px;padding:10px;margin-top:20px;box-shadow:0 0 10px rgba(0,0,0,0.2);border:1px solid #ccc;}
+.container .schoolInfoSummary:before {position:absolute;left:-24px;top:0;content:'';display:inline-block;border:10px solid transparent;border-right:14px solid #ccc;}
 .container .schoolInfoSummary h4 {font-size:0.875rem;margin-bottom:10px;text-align:center;}
 .container .schoolInfoSummary .form-group {padding-bottom:2px;margin-bottom:5px;}
 .container .schoolInfoSummary .form-group:last-child {border-bottom:none;}
@@ -677,6 +681,7 @@ ul, li {vertical-align:middle;}
 }
 @media (max-width:1230px) {
     .toTop {left:auto;right:20px;}
+    .container .visual {background-position-y: -50px }
 
 }
 @media (max-width:1020px) {
@@ -765,6 +770,10 @@ ul, li {vertical-align:middle;}
     .container .mainNotice .col-6 {float:none;width:100%;padding-left:0;padding-right:0;margin-bottom:50px;}
     .container .mainNotice .col-6:last-child {padding-left:0;}
     .container .mainNotice ul.noticeList li a {width:100%;}
+    .container .mainNotice ul.noticeList li a,
+    .container .mainNotice ul.noticeList li span,
+    .container .mainNotice ul.directSchool li select {height:56px;}
+
     .container .mapFindWrap {padding:100px 0;}
     .container .mapFindWrap ul li {float:none;width:400px;margin:50px auto;}
     .container .public {padding:100px 0;}

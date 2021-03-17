@@ -19,6 +19,18 @@ $(function(){
                 $('.topWrap').find('.sitemap').slideUp(200);
             }
         })
+
+        $('.mapList').find('a').mouseenter(function(){
+            var leftPo = $(this).outerWidth(true);
+            var topPo = $(this).position().top;
+            var badgeId = $(this).attr('name');
+            $('#' + badgeId).css('background', '#000');
+            $('.'+ badgeId).show().css({'left':leftPo + 30 ,'top':topPo - 15});
+        })
+        $('.mapList').find('a').mouseleave(function(){
+            $('.elementPosition').children('li').css('background', '')
+            $('.schoolInfoSummary').hide();
+        })
     }else{
         $('.topWrap').append('<div class="gnbCall"><i class="fa fa-bars"></i></div>');
         $('.gnbCall').click(function(){
@@ -136,15 +148,6 @@ $(function(){
         $(this).parents('.modal').hide();
     })
 
-    $('.mapList').find('a').mouseenter(function(){
-        var badgeId = $(this).attr('name');
-        $('#' + badgeId).css('background', '#000');
-        $('.'+ badgeId).show();
-    })
-    $('.mapList').find('a').mouseleave(function(){
-        $('.elementPosition').children('li').css('background', '')
-        $('.schoolInfoSummary').hide();
-    })
 
     $('.indicator').children('a').click(function(){
         if($(this).attr('href') === '#search'){
