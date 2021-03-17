@@ -6,7 +6,7 @@ $(function(){
     })
     $('.container').css('min-height', $(window).height() - $('.topWrap').outerHeight() - $('.footer').outerHeight());
 
-    if($(window).width() > 720){
+    if($(window).width() > 768){
         $('.gnb ul li a').click(function(){
             $('.topWrap').find('.sitemap').slideDown(200);
         })
@@ -20,16 +20,28 @@ $(function(){
             }
         })
     }else{
-        console.log($(window).height())
+        $('.topWrap').append('<div class="gnbCall"><i class="fa fa-bars"></i></div>');
         $('.gnbCall').click(function(){
-            $('.topWrap').find('.sitemap').slideDown(200);
+            $('.topWrap').find('.sitemap').addClass('on');
+            $('.topWrap').find('.util').addClass('on');
             $('body').css('overflow','hidden');
         })
+
+        $(document).on('click', function(e) {
+            if (!$(e.target).hasClass('sitemap') && !$(e.target).parents().hasClass('sitemap') &&
+                !$(e.target).hasClass('gnbCall') && !$(e.target).parents().hasClass('gnbCall')
+            ) {
+                $('.sitemap').removeClass('on');
+            }
+            if (!$(e.target).hasClass('sitemap') && !$(e.target).parents().hasClass('sitemap') &&
+                !$(e.target).hasClass('gnbCall') && !$(e.target).parents().hasClass('gnbCall') &&
+                !$(e.target).hasClass('util') && !$(e.target).parents().hasClass('util')
+            ) {
+                $('.util').removeClass('on');
+            }
+        });
         $('.topWrap').find('.sitemap').css('height', $(window).height() - 110)
     }
-    $(document).on('click',function(e){
-        // console.log($(e.target).attr('class'));
-    })
     $('.gnb').find('a').click(function(e){
         e.preventDefault();
         $('.sitemap').slideDown(200);
@@ -67,10 +79,10 @@ $(function(){
         $(this).parent().children('.dropdown-menu').slideToggle(200);
     });
     $(document).on('click', function(e){
-        // console.log($(e.target).attr('class'));
         if(!$(e.target).hasClass('dropdown') && !$(e.target).parents().hasClass('dropdown')) {
             $('.dropdown-menu').slideUp(200);
         }
+
     })
 
     $('.faq').children('li').click(function(){
@@ -126,10 +138,12 @@ $(function(){
 
     $('.mapList').find('a').mouseenter(function(){
         var badgeId = $(this).attr('name');
-        $(badgeId).css('background', '#000');
+        $('#' + badgeId).css('background', '#000');
+        $('.'+ badgeId).show();
     })
     $('.mapList').find('a').mouseleave(function(){
         $('.elementPosition').children('li').css('background', '')
+        $('.schoolInfoSummary').hide();
     })
 
     $('.indicator').children('a').click(function(){
