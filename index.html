@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/common.css">
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
 </head>
 <body>
@@ -96,6 +97,12 @@
                     <button>검색</button>
                 </div>
             </div>
+            <div class="bxslider">
+                <div class="visual first"></div>
+                <div class="visual second"></div>
+                <div class="visual third"></div>
+                <div class="visual fourth"></div>
+            </div>
         </div>
         <div class="schoolGroupWrap">
             <ul>
@@ -120,12 +127,14 @@
         <div class="mainNotice clearfix" id="board">
             <div class="contentWrap row">
                 <div class="col-6">
-                    <h3>공지사항 <a href="notice_notice.html"><i class="fa fa-plus"></i></a></h3>
-                    <ul class="noticeList">
-                        <li><a href="#">[공지] 2021년 한국연구재단 연간 사업 추진일정 안내</a></li>
-                        <li><a href="#">(재) 사용후핵연료관리핵심기술개발사업단(신설) 직원채용 공고</a></li>
-                        <li><a href="#">[정책용역과제 재공모] 기초ㆍ원천 R&D의 전략적 연계 방안 정책연구</a></li>
-                        <li><a href="#">[정책연구용역과제 공모] 사회맞춤형 산학협력 선도대학(LINC+) 육성 후속사업 심층 기획 연구</a></li>
+                    <h3>메뉴별 바로가기</h3>
+                    <ul class="direct-menu">
+                        <li><a href="#"><i class="fa fa-school fa-2x"></i>학교별 알리미</a></li>
+                        <li><a href="#"><i class="fa fa-child fa-2x"></i>유치원 알리미</a></li>
+                        <li><a href="#"><i class="fa fa-building fa-2x"></i>대학 알리미</a></li>
+                        <li><a href="#"><i class="fa fa-book-open fa-2x"></i>귀국학생 종합안내</a></li>
+                        <li><a href="#"><i class="fa fa-info-circle fa-2x"></i>정보오류 신고센터</a></li>
+                        <li><a href="#"><i class="fa fa-paper-plane fa-2x"></i>학교별 홈페이지 바로가기</a></li>
                     </ul>
                 </div>
                 <div class="col-6">
@@ -333,6 +342,19 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(function(){
+        $('.bxslider').bxSlider({
+            auto: true,
+            mode: 'fade',
+            speed: 100,
+            controls: false,
+            pager: false,
+            responsive: true,
+        });
+    });
+</script>
 
 </body>
 </html>
